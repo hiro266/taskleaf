@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :tasks, only: %i[index new edit show]
+  root 'tasks#index'
+  resources :tasks, only: %i[new edit show]
 end
